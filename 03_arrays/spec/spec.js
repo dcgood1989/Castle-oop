@@ -33,15 +33,15 @@ describe('empty', function() {
 });
 
 describe('first_n', function() {
-  xit('returns an empty array for an empty array', function() {
+  it('returns an empty array for an empty array', function() {
     expect(yourCode.first_n([], 3)).toEqual([]);
   });
 
-  xit('returns as many elements as it can when there are less than n', function() {
+  it('returns as many elements as it can when there are less than n', function() {
     expect(yourCode.first_n([1,2], 3)).toEqual([1,2]);
   });
 
-  xit('returns the first n objects in the array', function() {
+  it('returns the first n objects in the array', function() {
     expect(yourCode.first_n([1,2,3,4,5], 3)).toEqual([1,2,3]);
   });
 });

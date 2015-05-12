@@ -17,15 +17,19 @@ module.exports = {
     }
   },
 
-  // first_n: function(array) {
-  //   results = []
-  //   if (array.length === 0) {
-  //     return results
-  //   }
-  //   else if {
-  //     if (array.length < n && array.length > 0) {
-  //       results.push.array
-  //     }
-  //   }
-  // }
+  first_n: function(array, n) {
+    var results = [];
+    if (array.length === 0) {
+      return results;
+    }
+    else if (array.length === n) {
+      return array;
+    (array.length === n)
+      return ;
+    }
+    else if (array.length !== n && array.length !== 0) {
+      return array.slice(0, array.length + (1 - n));
+
+    }
+  }
 }
