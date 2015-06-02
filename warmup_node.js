@@ -9,7 +9,6 @@ function select(array, selectingFn) {
 }
 console.log(select([1, 2, 3, 4], function(n) { return n % 2 !== 0}));
 
-
 function takeWhile(array, takingFn) {
   var results = [];
     for (i = 0; i < array.length; i++)

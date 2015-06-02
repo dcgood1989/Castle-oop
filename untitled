@@ -1,0 +1,15 @@
+var fs = require("fs")
+
+var fileName = process.argv[2]
+
+fs.readFile(fileName, function(err, data){
+if (err) {
+throw err
+}
+var orgArray - data.toString(.split('\n'))
+var company = {}
+var manager;
+orgArray.forEach(function(employee) {
+if ((employee.match(/  /g) || [).length]))
+})
+})
