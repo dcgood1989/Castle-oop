@@ -21,7 +21,7 @@ module.exports = {
   },
 
   reverseJoin: function(string) {
-    return string.reverse().join()
+    return string.split()reverse().join()
   },
 
   reverseJoinCompact: function(string) {
