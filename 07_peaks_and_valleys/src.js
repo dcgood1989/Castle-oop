@@ -10,6 +10,40 @@
 
 module.exports = {
   peak: function() {
-    // your code here
+    return '/\\';
+  },
+
+  valley: function() {
+    return '___';
+  },
+
+  peaks: function(numberOfPeaks) {
+    var peak = '/\\';
+    var result = [];
+    for (var i = 1; i <= numberOfPeaks; i++) {
+      result.push(peak);
+    }
+    return result.join('');
+  },
+
+  valleys: function(numberOfValleys) {
+    var valley ='___';
+    var result = [];
+    for (var i = 1; i <= numberOfValleys; i++) {
+      result.push(valley);
+    }
+    return result.join('');
+  },
+
+  peaksAndValleys: function(numberOfPeaks, numberOfValleys) {
+    var result = [];
+    for (var i = 1; i <= numberOfPeaks + numberOfValleys; i++) {
+      if (i <= numberOfPeaks) {
+        result.push('/\\');
+      }
+      else { result.push('___'); }
+    }
+    return result.join('');
   }
+
 }
